@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         primary: "#b93530",
       },
+      screens: {
+        xs: "525px",
+      },
     },
   },
   plugins: [],

@@ -2,37 +2,31 @@ import Image from "next/image";
 
 export default function Navbar(): JSX.Element {
   return (
-    <div className="flex bg-white gap-10 text-center fixed w-screen flex-row items-center justify-between p-7 z-50">
+    <div className="fixed z-50 flex w-screen flex-row items-center justify-between bg-white p-7 text-center">
       <Image
         src="/images/gryphon.png"
         alt="Logo"
-        className="rounded-full -my-7"
-        width={150}
-        height={150}
+        className="-my-7 rounded-full"
+        width={125}
+        height={125}
       />
 
-      <div className="flex flex-row justify-center items-center gap-4">
+      <div className="flex flex-row items-center justify-center gap-4">
         <a
           href="https://github.com/Guelph-Artificial-Intelligence-Club"
-          className="text-slate-400 rounded-lg duration-300 ease-in-out cursor-pointer px-5 py-4 hover:bg-slate-100"
+          className="hidden cursor-pointer rounded-lg px-5 py-4 text-slate-400 duration-300 ease-in-out hover:bg-slate-100 sm:flex"
         >
           GitHub
         </a>
         <a
           href="https://discord.gg/7J7m2AkSAw"
-          className="text-slate-400 rounded-lg duration-300 ease-in-out cursor-pointer  px-7 py-4 hover:bg-slate-100"
+          className="hidden cursor-pointer rounded-lg px-7 py-4 text-slate-400 duration-300  ease-in-out hover:bg-slate-100 sm:flex"
         >
           Discord
         </a>
         <a
-          href="https://www.uoguelph.ca"
-          className="text-slate-400 rounded-lg duration-300 ease-in-out cursor-pointer  px-7 py-4 hover:bg-slate-100"
-        >
-          The University of Guelph
-        </a>
-        <a
           href="mailto:tsimps01@uoguelph.ca"
-          className="rounded-lg mx-3 hover:bg-slate-100 hover:text-slate-900 bg-slate-900 px-7 py-4 text-sm font-normal text-white duration-300 ease-in-out"
+          className="mx-3 rounded-lg bg-slate-900 px-7 py-4 text-sm font-normal text-white duration-300 ease-in-out hover:bg-slate-100 hover:text-slate-900"
         >
           Get in touch
         </a>
