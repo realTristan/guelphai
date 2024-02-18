@@ -9,7 +9,7 @@ const LottiePlayer = dynamic(() => import("lottie-react").then((mod) => mod), {
   ssr: false,
 });
 
-export default function Home() {
+export default function LearnMore() {
   return (
     <>
       <Navbar />

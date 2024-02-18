@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "AI UofG",
+  title: "Guelph AI",
   description:
     "The University of Guelph Artificial Intelligence Club is a student-run organization at the University of Guelph. We aim to provide students with the opportunity to learn and apply artificial intelligence in a collaborative and supportive environment.",
 };
