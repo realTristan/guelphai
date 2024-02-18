@@ -1,9 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import dynamic from "next/dynamic";
 import aiLottieAnimData from "@/assets/lottie/ai-lottie.json";
 import Navbar from "@/components/Navbar";
+import config from "@/lib/config/default.config";
+import Link from "next/link";
 
 const LottiePlayer = dynamic(() => import("lottie-react").then((mod) => mod), {
   ssr: false,
@@ -41,14 +42,14 @@ export default function Home() {
            * CTA buttons
            */}
           <div className="z-10 mt-7 flex flex-row gap-4">
-            <a
+            <Link
               href="/learn-more"
               className="rounded-lg bg-blue-600 px-7 py-4 text-center text-sm font-normal tracking-wide text-white duration-300 ease-in-out hover:px-14"
             >
               Learn More
-            </a>
+            </Link>
             <a
-              href="mailto:tsimps01@uoguelph.ca"
+              href={config.discordUrl}
               className="rounded-lg bg-slate-900 px-7 py-4 text-center text-sm font-normal tracking-wide text-white duration-300 ease-in-out hover:px-14"
             >
               Get in touch
@@ -57,7 +58,7 @@ export default function Home() {
         </div>
 
         {/**
-         * Animated ai
+         * Animated AI Lottie
          */}
         <LottiePlayer
           animationData={aiLottieAnimData}
