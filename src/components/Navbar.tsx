@@ -20,10 +20,10 @@ export default function Navbar(): JSX.Element {
           GitHub
         </a>
         <a
-          href={config.discordUrl}
+          href={config.instagramUrl}
           className="hidden cursor-pointer rounded-lg px-7 py-4 text-slate-400 duration-300  ease-in-out hover:bg-slate-100 sm:flex"
         >
-          Discord
+          Instagram
         </a>
         <a
           href={config.discordUrl}

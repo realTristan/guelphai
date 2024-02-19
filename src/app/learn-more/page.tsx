@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import aiLottieAnimData from "@/assets/lottie/ai-lottie.json";
+import lottieAnimationData from "@/assets/lottie/ai-lottie.json";
 import Navbar from "@/components/Navbar";
 import config from "@/lib/config/default.config";
 
@@ -57,10 +57,10 @@ export default function LearnMore() {
         </div>
 
         {/**
-         * Animated AI Lottie
+         * Lottie animation
          */}
         <LottiePlayer
-          animationData={aiLottieAnimData}
+          animationData={lottieAnimationData}
           className="fixed top-20 -z-10 h-[50rem] w-[50rem] scale-150 md:-right-16"
           loop={true}
         />
