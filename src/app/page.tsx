@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import lottieAnimationData from "@/assets/lottie/ai-lottie.json";
+import lottieAnimationData from "@/assets/lottie/hero-lottie.json";
 import Navbar from "@/components/Navbar";
 import config from "@/lib/config/default.config";
 import Link from "next/link";
@@ -26,7 +26,7 @@ export default function Home() {
            * Main content
            */}
           <h1 className="z-10 line-clamp-6 text-5xl font-bold leading-[3.3rem] text-slate-950 md:text-6xl xl:text-7xl">
-            Stay <mark className="bg-blue-600 text-white">up to date</mark>{" "}
+            Stay <mark className="bg-primary text-white">up to date</mark>{" "}
           </h1>
           <h1 className="z-10 line-clamp-6 text-5xl font-bold leading-[3.3rem] text-slate-950 md:text-6xl xl:text-7xl">
             with artificial intelligence at UofG!
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="z-10 mt-7 flex flex-row gap-4">
             <Link
               href="/learn-more"
-              className="rounded-lg bg-blue-600 px-7 py-4 text-center text-sm font-normal tracking-wide text-white duration-300 ease-in-out hover:px-14"
+              className="rounded-lg bg-primary px-7 py-4 text-center text-sm font-normal tracking-wide text-white duration-300 ease-in-out hover:px-14"
             >
               Learn More
             </Link>
@@ -62,7 +62,7 @@ export default function Home() {
          */}
         <LottiePlayer
           animationData={lottieAnimationData}
-          className="fixed top-20 -z-10 h-[50rem] w-[50rem] scale-150 md:-right-16"
+          className="fixed top-20 -z-10 h-[50rem] w-[50rem] scale-90 md:-right-16"
           loop={true}
         />
       </main>
