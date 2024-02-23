@@ -52,7 +52,7 @@ export default function Home() {
               href={config.discordUrl}
               className="rounded-lg bg-slate-900 px-7 py-4 text-center text-sm font-normal tracking-wide text-white duration-300 ease-in-out hover:px-14"
             >
-              Get in touch
+              Join our Discord
             </a>
           </div>
         </div>
